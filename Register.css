@@ -1,119 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-}
-body{
     margin: 0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
+}
+
+body {
     font-size: 18px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.mainheader{
+
+.mainheader {
     background-color: rgb(39, 66, 82);
-    height: 175px;
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 26em)) 1fr;
-    grid-template-rows: 1fr 1fr;
+    align-items: flex-end;
+    padding: 0 30px;
+    padding-bottom: 50px;
 }
-.mainheader > p{
-    width: 320px;
-    font-weight:500;
+
+.mainheader>p {
+    max-width: 340px;
     border-top: 4px solid rgb(104, 141, 136);
-    margin: 0;
     font-size: 50px;
     padding-top: 35px;
     letter-spacing: .5px;
     line-height: 44px;
     grid-column: 2/3;
 }
-.mainheader > p a{
+
+.mainheader>p a {
     color: white;
 }
-.mainheader > p a:hover{
+
+.mainheader>p a:hover {
     color: rgb(104, 141, 136);
 }
-.mainheader nav{
-    margin-top:40px;
-    grid-column:3/4 ;
-    margin-left: 35px;
+
+.mainheader nav {
+    grid-column: 3/4;
 }
-.mainheader nav ul{
+
+.mainheader nav ul {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
     gap: 15px;
-    font-size:15px;
-    padding-left: 56px;
+    font-size: 15px;
+    margin-top: 14px;
+    flex-wrap: wrap;
 }
-.mainheader nav h3{
+
+.mainheader nav h3 {
     color: rgb(104, 141, 136);
     font-weight: 500;
-    padding-left: 154px;
+    display: flex;
+    justify-content: flex-end;
 }
-.mainheader nav ul a{
+
+.mainheader nav ul a {
     color: white;
 }
-.mainheader nav ul a:hover{
+
+.mainheader nav ul a:hover {
     color: rgb(104, 141, 136);
 }
-.firstdiv{
+
+.firstdiv {
     text-align: center;
-    background-image: linear-gradient(to right,rgb(177, 209, 171),rgb(211, 229, 186),rgb(255, 241, 196));
+    background-image: linear-gradient(to right, rgb(177, 209, 171), rgb(211, 229, 186), rgb(255, 241, 196));
     margin-top: 0;
     padding: 30px;
 }
-.firstdiv h1{
+
+.firstdiv h1 {
     color: rgb(104, 141, 136);
     font-weight: 500;
 }
-.firstdiv p{
+
+.firstdiv p {
     color: rgb(138, 138, 138);
     font-size: 20px;
-    padding: 0 180px;
     line-height: 35px;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     margin: 60px 0;
+    padding: 30px;
 }
-.text{
+
+.text {
     width: 572px;
     margin-right: 23px;
 }
-form{
-    width: 280px;
+
+form {
+    max-width: 280px;
     margin-left: 29px;
 }
-.text h1{
+
+.text h1 {
     color: rgb(104, 141, 136);
     font-size: 23px;
     font-weight: 400;
 }
-.text p:nth-of-type(1){
+
+.text p:nth-of-type(1) {
     color: rgb(169, 179, 182);
     font-size: 14px;
 }
-.text p:nth-of-type(2),.text ul{
+
+.text p:nth-of-type(2),
+.text ul {
     font-size: 16px;
     color: rgb(138, 138, 138);
     list-style: square;
     line-height: 22px;
 }
-.text p:nth-of-type(3){
+
+.text p:nth-of-type(3) {
     color: rgb(104, 141, 136);
 }
-form label{
+
+form label {
     font-size: 16px;
     color: rgb(104, 141, 136);
     display: block;
     margin-bottom: 8px;
 }
+
 form input,
 form select,
-form textarea{
+form textarea {
     border: 1px solid rgb(169, 179, 182);
     border-radius: 5px;
     margin-bottom: 26px;
@@ -122,21 +147,24 @@ form textarea{
     color: rgb(109, 108, 108);
 }
 
-form input{
-    width: 278px;
+form input {
+    width: 100%;
     height: 35px;
 }
-form select{
+
+form select {
     height: 35px;
     width: 60px;
     padding: 8px;
 }
-form textarea{
+
+form textarea {
     resize: vertical;
-    width: 278px;
-    height:80px;
+    width: 100%;
+    height: 80px;
 }
-form button{
+
+form button {
     width: 140px;
     height: 42px;
     border-radius: 5px;
@@ -144,32 +172,80 @@ form button{
     color: white;
     background-color: rgb(104, 141, 136);
 }
-form button:hover{
+
+form button:hover {
     background-color: rgb(129, 168, 163);
 }
-footer{
+
+footer {
     background-color: rgb(39, 66, 82);
     display: grid;
-    grid-template-columns: 1fr repeat(2,minmax(auto,26em)) 1fr;
-    padding: 25px 0;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 26em)) 1fr;
+    padding: 25px 30px;
 }
-footer p{
+
+footer p {
     color: rgb(104, 141, 136);
     grid-column: 2/3;
     font-size: 15px;
 }
-footer ul{
+
+footer ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     grid-column: 3/4;
-    margin-left: 115px;
+    justify-content: flex-end;
 }
-footer ul a{
+
+footer ul a {
     color: white;
     font-size: 15px;
     font-weight: 300;
 }
-footer ul a:hover{
+
+footer ul a:hover {
     color: rgb(104, 141, 136);
+}
+
+
+@media screen and (max-width:900px) {
+
+    .mainheader {
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .mainheader>p {
+        margin-bottom: 50px;
+    }
+
+    .mainheader nav ul {
+        justify-content: center;
+    }
+
+    .mainheader nav h3 {
+        justify-content: center;
+    }
+
+    main {
+        display: block;
+    }
+
+    .text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    form {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .mainheader>p {
+        font-size: 34px;
+        max-width: 250px;
+    }
 }
